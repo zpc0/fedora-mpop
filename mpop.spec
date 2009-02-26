@@ -1,6 +1,6 @@
 Name:           mpop
 Version:        1.0.16
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        POP3 client for recieving mail from POP3 mailboxes
 
 Group:          Applications/Internet
@@ -67,6 +67,9 @@ fi
 
 
 %changelog
+* Wed Feb 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.16-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
 * Sat Jan 10 2009 Fabian Affolter <fabian@bernewireless.net> - 1.0.16-3
 - Added missing BR
 
