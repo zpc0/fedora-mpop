@@ -1,5 +1,5 @@
 Name:           mpop
-Version:        1.0.20
+Version:        1.0.21
 Release:        1%{?dist}
 Summary:        POP3 client for recieving mail from POP3 mailboxes
 
@@ -67,6 +67,9 @@ fi
 
 
 %changelog
+* Sat Jul 03 2010 Fabian Affolter <fabian@bernewireless.net> - 1.0.21-1
+- Updated to new upstream version 1.0.21
+
 * Thu Apr 08 2010 Fabian Affolter <fabian@bernewireless.net> - 1.0.20-1
 - Updated to new upstream version 1.0.20
 
