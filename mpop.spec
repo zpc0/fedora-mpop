@@ -1,6 +1,6 @@
 Name:           mpop
 Version:        1.0.24
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        POP3 client for recieving mail from POP3 mailboxes
 
 Group:          Applications/Internet
@@ -60,13 +60,16 @@ fi
 %files -f %{name}.lang
 %defattr(-,root,root,-)
 %doc AUTHORS ChangeLog COPYING NEWS NOTES README THANKS
-%doc doc/mpoprc.example doc/mpop.html doc/mpop.pdf
+%doc doc/mpoprc.example
 %{_mandir}/man*/%{name}*.*
 %{_infodir}/%{name}.info.gz
 %{_bindir}/%{name}
 
 
 %changelog
+* Wed Apr 27 2011 Fabian Affolter <fabian@bernewireless.net> - 1.0.24-2
+- Removed obsolete doc entries
+
 * Wed Apr 27 2011 Fabian Affolter <fabian@bernewireless.net> - 1.0.24-1
 - Updated to new upstream version 1.0.24
 
