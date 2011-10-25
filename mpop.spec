@@ -1,6 +1,6 @@
 Name:           mpop
-Version:        1.0.24
-Release:        3%{?dist}
+Version:        1.0.25
+Release:        1%{?dist}
 Summary:        POP3 client for recieving mail from POP3 mailboxes
 
 Group:          Applications/Internet
@@ -67,47 +67,50 @@ fi
 
 
 %changelog
-* Fri Aug 12 2011 Fabian Affolter <fabian@bernewireless.net> - 1.0.24-3
+* Tue Oct 25 2011 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.25-1
+- Updated to new upstream version 1.0.25
+
+* Fri Aug 12 2011 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.24-3
 - Rebuild (info)
 
-* Wed Apr 27 2011 Fabian Affolter <fabian@bernewireless.net> - 1.0.24-2
+* Wed Apr 27 2011 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.24-2
 - Removed obsolete doc entries
 
-* Wed Apr 27 2011 Fabian Affolter <fabian@bernewireless.net> - 1.0.24-1
+* Wed Apr 27 2011 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.24-1
 - Updated to new upstream version 1.0.24
 
-* Mon Mar 28 2011 Fabian Affolter <fabian@bernewireless.net> - 1.0.23-1
+* Mon Mar 28 2011 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.23-1
 - Updated to new upstream version 1.0.23
 
-* Mon Jan 17 2011 Fabian Affolter <fabian@bernewireless.net> - 1.0.22-1
+* Mon Jan 17 2011 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.22-1
 - Updated to new upstream version 1.0.22
 
-* Sat Jul 03 2010 Fabian Affolter <fabian@bernewireless.net> - 1.0.21-1
+* Sat Jul 03 2010 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.21-1
 - Updated to new upstream version 1.0.21
 
-* Thu Apr 08 2010 Fabian Affolter <fabian@bernewireless.net> - 1.0.20-1
+* Thu Apr 08 2010 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.20-1
 - Updated to new upstream version 1.0.20
 
-* Mon Nov 16 2009 Fabian Affolter <fabian@bernewireless.net> - 1.0.19-1
+* Mon Nov 16 2009 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.19-1
 - Updated to new upstream version 1.0.19
 
-* Sun Oct 12 2009 Fabian Affolter <fabian@bernewireless.net> - 1.0.18-1
+* Sun Oct 12 2009 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.18-1
 - Updated to new upstream version 1.0.18
 
 * Sat Jul 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.17-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
 
-* Sat Apr 11 2009 Fabian Affolter <fabian@bernewireless.net> - 1.0.17-1
+* Sat Apr 11 2009 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.17-1
 - Updated to new upstream version 1.0.17
 
 * Wed Feb 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.16-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
 
-* Sat Jan 10 2009 Fabian Affolter <fabian@bernewireless.net> - 1.0.16-3
+* Sat Jan 10 2009 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.16-3
 - Added missing BR
 
-* Sat Jan 10 2009 Fabian Affolter <fabian@bernewireless.net> - 1.0.16-2
+* Sat Jan 10 2009 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.16-2
 - Fixed files section, removed duplicates
 
-* Mon Dec 29 2008 Fabian Affolter <fabian@bernewireless.net> - 1.0.16-1
+* Mon Dec 29 2008 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.16-1
 - Initial package for Fedora
