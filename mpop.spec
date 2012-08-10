@@ -1,6 +1,6 @@
 Name:           mpop
 Version:        1.0.27
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        POP3 client for recieving mail from POP3 mailboxes
 
 Group:          Applications/Internet
@@ -67,6 +67,9 @@ fi
 
 
 %changelog
+* Fri Aug 10 2012 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.27-3
+- Rebuild for libgsasl
+
 * Fri Jul 20 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.27-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
 
