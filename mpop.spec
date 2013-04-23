@@ -1,6 +1,6 @@
 Name:           mpop
-Version:        1.0.27
-Release:        4%{?dist}
+Version:        1.0.28
+Release:        1%{?dist}
 Summary:        POP3 client for recieving mail from POP3 mailboxes
 
 Group:          Applications/Internet
@@ -19,22 +19,18 @@ BuildRequires:  gettext
 Requires(post):  info
 Requires(preun): info
 
-
 %description
 mpop is a small and fast POP3 client. Features include mail filtering,
 delivery to mbox files, maildir folders or a mail delivery agent, a very
 fast POP3 implementation, many authentication methods, good TLS/SSL
 support, IPv6 support, and more.
 
-
 %prep
 %setup -q
-
 
 %build
 %configure --with-gnome-keyring
 make %{?_smp_mflags}
-
 
 %install
 rm -rf %{buildroot}
@@ -42,20 +38,16 @@ make install DESTDIR=%{buildroot} INSTALL="install -p"
 rm -f %{buildroot}%{_infodir}/dir
 %find_lang %{name}
 
-
 %clean
 rm -rf %{buildroot}
 
-
 %post
 /sbin/install-info %{_infodir}/%{name}.info %{_infodir}/dir || :
-
 
 %preun
 if [ $1 = 0 ] ; then
 /sbin/install-info --delete %{_infodir}/%{name}.info %{_infodir}/dir || :
 fi
-
 
 %files -f %{name}.lang
 %defattr(-,root,root,-)
@@ -65,8 +57,10 @@ fi
 %{_infodir}/%{name}.info.gz
 %{_bindir}/%{name}
 
-
 %changelog
+* Tue Apr 23 2013 Fabian Affolter <mail@fabian-affolter.ch> - 1.0.28-1
+- Updated to new upstream version 1.0.28
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.27-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
