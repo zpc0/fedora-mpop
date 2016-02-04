@@ -1,11 +1,11 @@
 Name:           mpop
-Version:        1.0.29
-Release:        5%{?dist}
-Summary:        POP3 client for recieving mail from POP3 mailboxes
+Version:        1.2.4
+Release:        1%{?dist}
+Summary:        A POP3 client for recieving mail from POP3 mailboxes
 
 License:        GPLv3+
 URL:            http://mpop.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
+Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.xz
 
 BuildRequires:  openssl-devel
 BuildRequires:  libgsasl-devel
@@ -44,13 +44,17 @@ if [ $1 = 0 ] ; then
 fi
 
 %files -f %{name}.lang
-%doc AUTHORS ChangeLog COPYING NEWS NOTES README THANKS
+%doc AUTHORS ChangeLog NEWS NOTES README THANKS
 %doc doc/mpoprc.example
+%license COPYING
 %{_mandir}/man*/%{name}*.*
 %{_infodir}/%{name}.info.gz
 %{_bindir}/%{name}
 
 %changelog
+* Thu Feb 04 2016 Fabian Affolter <mail@fabian-affolter.ch> - 1.2.4-1
+- Updated to new upstream version 1.2.4 (rhbz#1179320)
+
 * Thu Feb 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 1.0.29-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 
