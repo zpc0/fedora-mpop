@@ -1,5 +1,5 @@
 Name:           mpop
-Version:        1.2.4
+Version:        1.2.6
 Release:        1%{?dist}
 Summary:        A POP3 client for recieving mail from POP3 mailboxes
 
@@ -28,10 +28,10 @@ support, IPv6 support, and more.
 
 %build
 %configure --with-gnome-keyring
-make %{?_smp_mflags}
+%make_build
 
 %install
-make install DESTDIR=%{buildroot} INSTALL="install -p"
+%make_install
 rm -f %{buildroot}%{_infodir}/dir
 %find_lang %{name}
 
@@ -52,6 +52,9 @@ fi
 %{_bindir}/%{name}
 
 %changelog
+* Thu Nov 17 2016 Fabian Affolter <mail@fabian-affolter.ch> - 1.2.6-1
+- Updated to new upstream version 1.2.6
+
 * Thu Feb 04 2016 Fabian Affolter <mail@fabian-affolter.ch> - 1.2.4-1
 - Updated to new upstream version 1.2.4 (rhbz#1179320)
 
