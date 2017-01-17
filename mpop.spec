@@ -1,7 +1,7 @@
 Name:           mpop
 Version:        1.2.6
-Release:        1%{?dist}
-Summary:        A POP3 client for recieving mail from POP3 mailboxes
+Release:        2%{?dist}
+Summary:        A client for receiving mail from POP3 mailboxes
 
 License:        GPLv3+
 URL:            http://mpop.sourceforge.net/
@@ -52,6 +52,9 @@ fi
 %{_bindir}/%{name}
 
 %changelog
+* Tue Jan 17 2017 Fabian Affolter <mail@fabian-affolter.ch> - 1.2.6-2
+- Update summary (rhbz#1399621)
+
 * Thu Nov 17 2016 Fabian Affolter <mail@fabian-affolter.ch> - 1.2.6-1
 - Updated to new upstream version 1.2.6
 
