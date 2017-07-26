@@ -1,6 +1,6 @@
 Name:           mpop
 Version:        1.2.6
-Release:        3%{?dist}
+Release:        4%{?dist}
 Summary:        A client for receiving mail from POP3 mailboxes
 
 License:        GPLv3+
@@ -52,6 +52,9 @@ fi
 %{_bindir}/%{name}
 
 %changelog
+* Wed Jul 26 2017 Fedora Release Engineering <releng@fedoraproject.org> - 1.2.6-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
+
 * Fri Feb 10 2017 Fedora Release Engineering <releng@fedoraproject.org> - 1.2.6-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
 
