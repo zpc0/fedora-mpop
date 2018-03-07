@@ -1,12 +1,13 @@
 Name:           mpop
 Version:        1.2.6
-Release:        6%{?dist}
+Release:        7%{?dist}
 Summary:        A client for receiving mail from POP3 mailboxes
 
 License:        GPLv3+
 URL:            http://mpop.sourceforge.net/
 Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.xz
 
+BuildRequires:  gcc
 BuildRequires:  openssl-devel
 BuildRequires:  libgsasl-devel
 BuildRequires:  libidn-devel
@@ -24,7 +25,7 @@ fast POP3 implementation, many authentication methods, good TLS/SSL
 support, IPv6 support, and more.
 
 %prep
-%setup -q
+%autosetup
 
 %build
 %configure --with-gnome-keyring
@@ -52,6 +53,9 @@ fi
 %{_bindir}/%{name}
 
 %changelog
+* Tue Mar 06 2018 Fabian Affolter <mail@fabian-affolter.ch> - 1.2.6-7
+- Fix BR
+
 * Thu Feb 08 2018 Fedora Release Engineering <releng@fedoraproject.org> - 1.2.6-6
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild
 
