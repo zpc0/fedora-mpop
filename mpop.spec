@@ -12,7 +12,7 @@ BuildRequires:  openssl-devel
 BuildRequires:  libgsasl-devel
 BuildRequires:  libidn-devel
 BuildRequires:  gnutls-devel
-BuildRequires:  gnome-keyring-devel
+BuildRequires:  libgnome-keyring-devel
 BuildRequires:  gettext
 
 Requires(post):  info
