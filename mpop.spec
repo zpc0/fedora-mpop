@@ -15,9 +15,6 @@ BuildRequires:  gnutls-devel
 BuildRequires:  libgnome-keyring-devel
 BuildRequires:  gettext
 
-Requires(post):  info
-Requires(preun): info
-
 %description
 mpop is a small and fast POP3 client. Features include mail filtering,
 delivery to mbox files, maildir folders or a mail delivery agent, a very
@@ -35,14 +32,6 @@ support, IPv6 support, and more.
 %make_install
 rm -f %{buildroot}%{_infodir}/dir
 %find_lang %{name}
-
-%post
-/sbin/install-info %{_infodir}/%{name}.info %{_infodir}/dir || :
-
-%preun
-if [ $1 = 0 ] ; then
-/sbin/install-info --delete %{_infodir}/%{name}.info %{_infodir}/dir || :
-fi
 
 %files -f %{name}.lang
 %doc AUTHORS ChangeLog NEWS NOTES README THANKS
