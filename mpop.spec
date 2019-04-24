@@ -1,6 +1,6 @@
 Name:           mpop
 Version:        1.2.6
-Release:        9%{?dist}
+Release:        10%{?dist}
 Summary:        A client for receiving mail from POP3 mailboxes
 
 License:        GPLv3+
@@ -38,10 +38,13 @@ rm -f %{buildroot}%{_infodir}/dir
 %doc doc/mpoprc.example
 %license COPYING
 %{_mandir}/man*/%{name}*.*
-%{_infodir}/%{name}.info.gz
+%{_infodir}/%{name}.info.*
 %{_bindir}/%{name}
 
 %changelog
+* Wed Apr 24 2019 Björn Esser <besser82@fedoraproject.org> - 1.2.6-10
+- Remove hardcoded gzip suffix from GNU info pages
+
 * Fri Feb 01 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1.2.6-9
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
 
