@@ -1,11 +1,11 @@
 Name:           mpop
-Version:        1.2.6
-Release:        10%{?dist}
+Version:        1.4.4
+Release:        1%{?dist}
 Summary:        A client for receiving mail from POP3 mailboxes
 
 License:        GPLv3+
-URL:            http://mpop.sourceforge.net/
-Source0:        http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.xz
+URL:            https://marlam.de/mpop/
+Source0:        https://marlam.de/mpop/releases/%{name}-%{version}.tar.xz
 
 BuildRequires:  gcc
 BuildRequires:  openssl-devel
@@ -42,6 +42,9 @@ rm -f %{buildroot}%{_infodir}/dir
 %{_bindir}/%{name}
 
 %changelog
+* Mon May 27 2019 Fabian Affolter <mail@fabian-affolter.ch> - 1.4.4-7
+- Update to latest upstream release 1.4.4
+
 * Wed Apr 24 2019 Björn Esser <besser82@fedoraproject.org> - 1.2.6-10
 - Remove hardcoded gzip suffix from GNU info pages
 
