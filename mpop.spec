@@ -1,6 +1,6 @@
 Name:           mpop
 Version:        1.4.4
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        A client for receiving mail from POP3 mailboxes
 
 License:        GPLv3+
@@ -42,6 +42,9 @@ rm -f %{buildroot}%{_infodir}/dir
 %{_bindir}/%{name}
 
 %changelog
+* Thu Jul 25 2019 Fedora Release Engineering <releng@fedoraproject.org> - 1.4.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
 * Mon May 27 2019 Fabian Affolter <mail@fabian-affolter.ch> - 1.4.4-7
 - Update to latest upstream release 1.4.4
 
