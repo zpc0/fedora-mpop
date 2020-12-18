@@ -1,13 +1,14 @@
 Name:           mpop
-Version:        1.4.4
-Release:        4%{?dist}
-Summary:        A client for receiving mail from POP3 mailboxes
+Version:        1.4.10
+Release:        1%{?dist}
+Summary:        Client for receiving mail from POP3 mailboxes
 
 License:        GPLv3+
 URL:            https://marlam.de/mpop/
 Source0:        https://marlam.de/mpop/releases/%{name}-%{version}.tar.xz
 
 BuildRequires:  gcc
+BuildRequires:  make
 BuildRequires:  openssl-devel
 BuildRequires:  libgsasl-devel
 BuildRequires:  libidn-devel
@@ -42,6 +43,9 @@ rm -f %{buildroot}%{_infodir}/dir
 %{_bindir}/%{name}
 
 %changelog
+* Fri Dec 18 2020 Fabian Affolter <mail@fabian-affolter.ch> - 1.4.10-1
+- Update to new upstream release 1.4.10
+
 * Tue Jul 28 2020 Fedora Release Engineering <releng@fedoraproject.org> - 1.4.4-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild
 
