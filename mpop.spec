@@ -1,20 +1,24 @@
 Name:           mpop
-Version:        1.4.10
+Version:        1.4.18
 Release:        9%{?dist}
 Summary:        Client for receiving mail from POP3 mailboxes
 
 License:        GPL-3.0-or-later
 URL:            https://marlam.de/mpop/
 Source0:        https://marlam.de/mpop/releases/%{name}-%{version}.tar.xz
+Source1:        https://marlam.de/mpop/releases/%{name}-%{version}.tar.xz.sig
+Source2:        https://marlam.de/key.txt
 
 BuildRequires:  gcc
-BuildRequires:  make
-BuildRequires:  openssl-devel
-BuildRequires:  libgsasl-devel
-BuildRequires:  libidn-devel
+BuildRequires:  gettext
 BuildRequires:  gnutls-devel
 BuildRequires:  libgnome-keyring-devel
-BuildRequires:  gettext
+BuildRequires:  libgsasl-devel
+BuildRequires:  libidn-devel
+BuildRequires:  make
+BuildRequires:  openssl-devel
+# for %%gpgverify
+BuildRequires:  gnupg2
 
 %description
 mpop is a small and fast POP3 client. Features include mail filtering,
@@ -23,6 +27,7 @@ fast POP3 implementation, many authentication methods, good TLS/SSL
 support, IPv6 support, and more.
 
 %prep
+%{gpgverify} --keyring='%{SOURCE2}' --signature='%{SOURCE1}' --data='%{SOURCE0}'
 %autosetup
 
 %build
