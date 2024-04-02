@@ -46,6 +46,7 @@ rm -f %{buildroot}%{_infodir}/dir
 %{_mandir}/man*/%{name}*.*
 %{_infodir}/%{name}.info.*
 %{_bindir}/%{name}
+%{_bindir}/%{name}d
 
 %changelog
 %autochangelog
