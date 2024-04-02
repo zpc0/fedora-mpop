@@ -3,7 +3,7 @@ Version:        1.4.10
 Release:        9%{?dist}
 Summary:        Client for receiving mail from POP3 mailboxes
 
-License:        GPLv3+
+License:        GPL-3.0-or-later
 URL:            https://marlam.de/mpop/
 Source0:        https://marlam.de/mpop/releases/%{name}-%{version}.tar.xz
 
