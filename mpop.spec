@@ -1,6 +1,6 @@
 Name:           mpop
 Version:        1.4.18
-Release:        9%{?dist}
+Release:        %autorelease
 Summary:        Client for receiving mail from POP3 mailboxes
 
 License:        GPL-3.0-or-later
