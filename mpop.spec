@@ -1,5 +1,5 @@
 Name:           mpop
-Version:        1.4.19
+Version:        1.4.21
 Release:        %autorelease
 Summary:        Client for receiving mail from POP3 mailboxes
 
@@ -12,11 +12,9 @@ Source2:        https://marlam.de/key.txt
 BuildRequires:  gcc
 BuildRequires:  gettext
 BuildRequires:  gnutls-devel
-BuildRequires:  libgnome-keyring-devel
-BuildRequires:  libgsasl-devel
-BuildRequires:  libidn-devel
+BuildRequires:  libsecret-devel
+BuildRequires:  libidn2-devel
 BuildRequires:  make
-BuildRequires:  openssl-devel
 # for %%gpgverify
 BuildRequires:  gnupg2
 
@@ -31,7 +29,7 @@ support, IPv6 support, and more.
 %autosetup
 
 %build
-%configure --with-gnome-keyring
+%configure
 %make_build
 
 %install
